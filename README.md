@@ -1,11 +1,11 @@
-# Very short description of the package
+# Socialite Auth
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/creatvstudio/socialite-auth.svg?style=flat-square)](https://packagist.org/packages/creatvstudio/socialite-auth)
 [![Build Status](https://img.shields.io/travis/creatvstudio/socialite-auth/master.svg?style=flat-square)](https://travis-ci.org/creatvstudio/socialite-auth)
 [![Quality Score](https://img.shields.io/scrutinizer/g/creatvstudio/socialite-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/creatvstudio/socialite-auth)
 [![Total Downloads](https://img.shields.io/packagist/dt/creatvstudio/socialite-auth.svg?style=flat-square)](https://packagist.org/packages/creatvstudio/socialite-auth)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This package provides easy laravel socialite authentication. By [CreatvStudio](https://creatvstudio.ph)
 
 ## Requirements
 
@@ -77,7 +77,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
-use App\Services\SocialiteAuth\AuthenticatesSocialiteUser;
+use CreatvStudio\SocialiteAuth\AuthenticatesSocialiteUser;
 
 class SocialiteController extends Controller
 {
