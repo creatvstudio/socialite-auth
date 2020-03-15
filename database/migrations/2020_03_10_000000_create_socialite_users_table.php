@@ -18,7 +18,7 @@ class CreateSocialiteUsersTable extends Migration
             $table->morphs('socialiteable');
             $table->string('provider')->index();
             $table->string('provider_id')->index();
-            $table->string('token');
+            $table->text('token');
             $table->timestamps();
         });
     }
