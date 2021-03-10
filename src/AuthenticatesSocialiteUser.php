@@ -7,13 +7,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Registered;
 use Laravel\Socialite\Facades\Socialite;
 use CreatvStudio\SocialiteAuth\SocialiteUser;
-use Illuminate\Foundation\Auth\RedirectsUsers;
 use Illuminate\Validation\ValidationException;
 
 trait AuthenticatesSocialiteUser
 {
-    use RedirectsUsers;
-
     protected $socialiteUser;
 
     /**
@@ -187,6 +184,20 @@ trait AuthenticatesSocialiteUser
         // ]);
 
         return redirect('login');
+    }
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        if (method_exists($this, 'redirectTo')) {
+            return $this->redirectTo();
+        }
+
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
     }
 
     /**
