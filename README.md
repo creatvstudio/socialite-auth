@@ -1,9 +1,9 @@
 # Socialite Auth
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/creatvstudio/socialite-auth.svg?style=flat-square)](https://packagist.org/packages/creatvstudio/socialite-auth)
+[![Total Downloads](https://img.shields.io/packagist/dt/creatvstudio/socialite-auth.svg?style=flat-square)](https://packagist.org/packages/creatvstudio/socialite-auth)
 <!-- [![Build Status](https://img.shields.io/travis/creatvstudio/socialite-auth/master.svg?style=flat-square)](https://travis-ci.org/creatvstudio/socialite-auth) -->
 <!-- [![Quality Score](https://img.shields.io/scrutinizer/g/creatvstudio/socialite-auth.svg?style=flat-square)](https://scrutinizer-ci.com/g/creatvstudio/socialite-auth) -->
-[![Total Downloads](https://img.shields.io/packagist/dt/creatvstudio/socialite-auth.svg?style=flat-square)](https://packagist.org/packages/creatvstudio/socialite-auth)
 
 This package provides easy laravel socialite authentication. By [CreatvStudio](https://creatvstudio.ph)
 
